@@ -7,7 +7,7 @@ import (
 
 func TestConvertTags1(t *testing.T) {
 	expected := "ウンコ"
-	actual := ConvertTags("{TARGET_NAME}チャン！", "ウンコ", 1)
+	actual := ConvertTags("{TARGET_NAME}！", "ウンコ", 1)
 	t.Log(actual)
 	if strings.Count(actual, expected) != 1 {
 		t.Errorf("handler returned unexpected body: got %v want %v", actual, expected)
@@ -16,7 +16,7 @@ func TestConvertTags1(t *testing.T) {
 
 func TestConvertTags2(t *testing.T) {
 	expected := "ウンコ"
-	actual := ConvertTags("{TARGET_NAME}チャン！", "", 1)
+	actual := ConvertTags("{TARGET_NAME}！", "", 1)
 	t.Log(actual)
 	if strings.Count(actual, expected) != 0 {
 		t.Errorf("handler returned unexpected body: got %v want %v", actual, expected)
