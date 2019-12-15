@@ -11,7 +11,7 @@
 
 ```bash
 $ go version
-go version go1.12 linux/amd64
+go version go1.12 darwin/amd64
 ```
 
 ## インストール
