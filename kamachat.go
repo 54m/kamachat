@@ -9,7 +9,7 @@ import (
 )
 
 var appVersion = `Okama Nanchatte (kamachat) command version 0.1.0
-Copyright (c) 2019 54m
+Copyright (c) 2020 54m
 Released under the MIT License.
 https://github.com/54m/kamachat`
 
