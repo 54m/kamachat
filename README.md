@@ -88,7 +88,7 @@ $ kamachat
 ```
 
 ## Dockerコンテナ版
-おかまやオネエで環境を汚したくない、Goの実行環境を持っていないなどの状況でもお手軽におかまになるために、Dockerコンテナでもkamachatを用意した ( [54m/kamachat](https://hub.docker.com/r/54m/kamachat) )。
+おかまやオネエで環境を汚したくない、Goの実行環境を持っていないなどの状況でもお手軽におかまになるために、Dockerコンテナでもkamachatを用意した ( [54mch4n/kamachat](https://hub.docker.com/r/54mch4n/kamachat) )。
 
 ### 使い方
 
