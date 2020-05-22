@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/54mch4n/kamachat/pattern"
+	"github.com/54m/kamachat/pattern"
 	"github.com/ikawaha/kagome.ipadic/tokenizer"
 	"github.com/miiton/kanaconv"
 )

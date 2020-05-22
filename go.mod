@@ -1,4 +1,4 @@
-module github.com/54mch4n/kamachat
+module github.com/54m/kamachat
 
 go 1.12
 

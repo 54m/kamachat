@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/54mch4n/kamachat/generator"
+	"github.com/54m/kamachat/generator"
 	"github.com/docopt/docopt-go"
 )
 
 var appVersion = `Okama Nanchatte (kamachat) command version 0.1.0
-Copyright (c) 2019 54mch4n
+Copyright (c) 2019 54m
 Released under the MIT License.
-https://github.com/54mch4n/kamachat`
+https://github.com/54m/kamachat`
 
 var usage = `Usage:
   kamachat [options] [<name>]
