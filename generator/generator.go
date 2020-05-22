@@ -46,7 +46,6 @@ type Config struct {
 
 // Start ... おじさんの文言を生成
 func Start(config Config) (string, error) {
-
 	// メッセージを選択する
 	selectedMessage := selectMessage()
 

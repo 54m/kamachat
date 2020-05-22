@@ -6,7 +6,7 @@ import (
 )
 
 func TestConvertTags1(t *testing.T) {
-	expected := "ウンコ"
+	expected := Shit
 	actual := ConvertTags("{TARGET_NAME}！", "ウンコ", 1)
 	t.Log(actual)
 	if strings.Count(actual, expected) != 1 {
@@ -15,7 +15,7 @@ func TestConvertTags1(t *testing.T) {
 }
 
 func TestConvertTags2(t *testing.T) {
-	expected := "ウンコ"
+	expected := Shit
 	actual := ConvertTags("{TARGET_NAME}！", "", 1)
 	t.Log(actual)
 	if strings.Count(actual, expected) != 0 {
@@ -24,7 +24,7 @@ func TestConvertTags2(t *testing.T) {
 }
 
 func TestConvertTags3(t *testing.T) {
-	expected := "。"
+	expected := ReadingPoint
 	actual := ConvertTags("{TARGET_NAME}いえい！{EMOJI_POS}", "", 0)
 	t.Log(actual)
 	if strings.Count(actual, expected) != 1 {

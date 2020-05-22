@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"log"
-	"os"
 
 	"github.com/54mch4n/kamachat/generator"
 	"github.com/docopt/docopt-go"
@@ -34,13 +33,11 @@ func main() {
 	err := args.Bind(&config)
 	if err != nil {
 		log.Fatal(err)
-		os.Exit(1)
 	}
 
 	result, err := generator.Start(config)
 	if err != nil {
 		log.Fatal(err)
-		os.Exit(1)
 	}
 	fmt.Printf("%s\n", result)
 }

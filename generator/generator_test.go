@@ -65,7 +65,7 @@ func TestInsertPunctuations3(t *testing.T) {
 }
 
 func BenchmarkPunctuation(b *testing.B) {
-	for i:=0; i < b.N; i++ {
+	for i := 0; i < b.N; i++ {
 		insertPunctuations("どうしちゃったのかな", PunctuationConfig{[]string{"助動詞", "助詞"}, 100})
 	}
 }

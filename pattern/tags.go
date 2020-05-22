@@ -33,7 +33,10 @@ var uniqTags = map[string][]string{
 	},
 	// 地名
 	"{LOCATION}": {
-		"愛知", "青森", "秋田", "石川", "茨城", "岩手", "愛媛", "大分", "大阪", "岡山", "沖縄", "香川", "鹿児島", "神奈川", "岐阜", "京都", "熊本", "群馬", "高知", "埼玉", "佐賀", "滋賀", "静岡", "島根", "千葉", "東京", "徳島", "栃木", "鳥取", "富山", "長崎", "長野", "奈良", "新潟", "兵庫", "広島", "福井", "福岡", "福島", "北海道", "三重", "宮城", "宮崎", "山形", "山口", "山梨", "和歌山",
+		"愛知", "青森", "秋田", "石川", "茨城", "岩手", "愛媛", "大分", "大阪", "岡山", "沖縄", "香川",
+		"鹿児島", "神奈川", "岐阜", "京都", "熊本", "群馬", "高知", "埼玉", "佐賀", "滋賀", "静岡", "島根",
+		"千葉", "東京", "徳島", "栃木", "鳥取", "富山", "長崎", "長野", "奈良", "新潟", "兵庫", "広島", "福井",
+		"福岡", "福島", "北海道", "三重", "宮城", "宮崎", "山形", "山口", "山梨", "和歌山",
 	},
 	// 外食
 	"{RESTAURANT}": {
@@ -208,12 +211,12 @@ func ConvertTags(message, targetName string, emojiNumber int) string {
 	for tag, pat := range flexTags {
 		n := strings.Count(message, tag)
 		for i := 0; i < n; i++ {
-			content := ""
+			var content string
 			if emojiNumber > 0 {
 				content = combineMultiplePatterns(pat, rand.Intn(emojiNumber)+1)
 			} else {
 				// Okama could be seriously
-				content = "。"
+				content = ReadingPoint
 			}
 			// タグを置換
 			message = strings.Replace(message, tag, content, 1)
